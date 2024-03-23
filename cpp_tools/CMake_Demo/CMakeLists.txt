@@ -1,3 +1,4 @@
+## --> windows下指定gun编译器指令: cmake -G "MinGW Makefiles" ..
 # 指定cmake最低版本
 cmake_minimum_required(VERSION 3.15)
 
