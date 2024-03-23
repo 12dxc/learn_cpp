@@ -2,6 +2,11 @@
 # 指定cmake最低版本
 cmake_minimum_required(VERSION 3.15)
 
+# windows下使用cmake+mingw+vcpkg
+if(DEFINED ENV{VCPKG_DEFAULT_TRIPLET} AND NOT DEFINED VCPKG_TARGET_TRIPLET)
+    set(VCPKG_TARGET_TRIPLET "$ENV{VCPKG_DEFAULT_TRIPLET}" CACHE STRING "")
+endif()
+
 # 指定项目名称
 project(test)
 
