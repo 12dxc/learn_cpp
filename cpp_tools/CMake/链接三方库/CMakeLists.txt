@@ -3,15 +3,18 @@ project(Demo)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# 在线下载配置和依赖
-# 使用FetchContent来下载和管理第三方库  
+# 在线引入第三方库 -------------------
+# 启用FetchContent模块
 include(FetchContent)
+#声明一个依赖
 FetchContent_Declare(
-  libhv
-  GIT_REPOSITORY https://gitee.com/libhv/libhv.git
-  GIT_TAG        v1.0.0
+    libhv
+    GIT_REPOSITORY https://gitee.com/libhv/libhv.git  # 拉取存储库
+    GIT_TAG v1.3.2  # 存储库的发行版
 )
-FetchContent_MakeAvailable(libhv)   # 创建链接库
+# 拉取并添加依赖
+FetchContent_MakeAvailable(libhv)
+# ---------------------------------
 
 # 添加你的执行文件
 add_executable(app main.cpp)
