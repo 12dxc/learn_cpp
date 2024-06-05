@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/cancel.bmp</file>
+        <file>icons/exit.bmp</file>
+        <file>icons/font.bmp</file>
+        <file>icons/header.bmp</file>
+        <file>icons/locate.bmp</file>
+        <file>icons/ok.bmp</file>
+        <file>icons/row.bmp</file>
+    </qresource>
+</RCC>
