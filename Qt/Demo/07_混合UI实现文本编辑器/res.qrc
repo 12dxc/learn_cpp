@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/bld.bmp</file>
+        <file>images/clear.bmp</file>
+        <file>images/copy.bmp</file>
+        <file>images/cut.bmp</file>
+        <file>images/exit.bmp</file>
+        <file>images/font.ico</file>
+        <file>images/itl.bmp</file>
+        <file>images/new.bmp</file>
+        <file>images/open.bmp</file>
+        <file>images/paste.bmp</file>
+        <file>images/under.bmp</file>
+    </qresource>
+</RCC>
