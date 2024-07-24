@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// ÇóÊý½×³Ë
+// æ±‚æ•°é˜¶ä¹˜
 int fact(int i)
 {
 

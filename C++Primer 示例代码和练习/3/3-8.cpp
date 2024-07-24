@@ -6,21 +6,21 @@ int main()
 {
     string str("this is a string");
 
-    // while循环形式
+    // while寰幆褰㈠紡
     int i = 0;
     while (i < str.size())
     {
         str[i] = 'X';
         i++;
     }
-    cout << "while循环实现: " << str << endl;
+    cout << "while寰幆瀹炵幇: " << str << endl;
 
-    // for循环形式
+    // for寰幆褰㈠紡
     for (int i = 0; i < str.size(); i++)
     {
         str[i] = 'X';
     }
-    cout << "for循环实现: " << str << endl;
+    cout << "for寰幆瀹炵幇: " << str << endl;
 
     return 0;
 }

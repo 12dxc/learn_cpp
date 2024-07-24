@@ -1,4 +1,4 @@
-﻿#include "ThreadPool/ThreadPool.h"
+#include "ThreadPool/ThreadPool.h"
 #include <iostream>
 #include <sstream>
 using namespace std;

@@ -10,8 +10,8 @@ int main()
         {8, 9, 10, 11},
     };
 
-    // Êä³öiaµÄÔªËØ
-    // ·¶Î§forÑ­»·
+    // è¾“å‡ºiaçš„å…ƒç´ 
+    // èŒƒå›´forå¾ªçŽ¯
     for (auto &row : ia)
     {
         for (auto col : row)
@@ -21,7 +21,7 @@ int main()
     }
     cout << endl;
 
-    // forÑ­»· ÏÂ±ê
+    // forå¾ªçŽ¯ ä¸‹æ ‡
     for (auto i = 0; i < 3; i++)
     {
         for (auto j = 0; j < 4; j++)
@@ -31,7 +31,7 @@ int main()
     }
     cout << endl;
 
-    // forÑ­»· Ö¸Õë
+    // forå¾ªçŽ¯ æŒ‡é’ˆ
     for (auto p = ia; p != ia + 3; p++)
     {
         for (auto q = *p; q != *p + 4; q++)

@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     list<string> lStr{"hello", "world", "hello", "hello", "hi"};
-    cout << "hello ³öÏÖµÄ´ÎÊý: " << count(lStr.begin(), lStr.end(), "hello");
+    cout << "hello å‡ºçŽ°çš„æ¬¡æ•°: " << count(lStr.begin(), lStr.end(), "hello");
 
     return 0;
 }

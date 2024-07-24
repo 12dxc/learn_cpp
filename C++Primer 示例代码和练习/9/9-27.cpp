@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
     forward_list<int> flst{1, 2, 3, 4, 5, 6, 7};
-    auto prev = flst.before_begin(); // ±íÊ¾flstµÄÊ×Ç°ÔªËØ
-    auto curr = flst.begin();        // ±íÊ¾flstµÄµÚÒ»¸öÔªËØ
+    auto prev = flst.before_begin(); // è¡¨ç¤ºflstçš„é¦–å‰å…ƒç´ 
+    auto curr = flst.begin();        // è¡¨ç¤ºflstçš„ç¬¬ä¸€ä¸ªå…ƒç´ 
     while (curr != flst.end())
     {
         if (*curr % 2)
@@ -15,8 +15,8 @@ int main()
         }
         else
         {
-            prev = curr; // prevÖ¸ÏòÉÏÒ»¸öÔªËØ
-            ++curr;      // ÒÆ¶¯µü´úÆ÷Ö¸ÏòÏÂÒ»¸öÔªËØ}
+            prev = curr; // prevæŒ‡å‘ä¸Šä¸€ä¸ªå…ƒç´ 
+            ++curr;      // ç§»åŠ¨è¿­ä»£å™¨æŒ‡å‘ä¸‹ä¸€ä¸ªå…ƒç´ }
         }
     }
     for (auto i : flst)

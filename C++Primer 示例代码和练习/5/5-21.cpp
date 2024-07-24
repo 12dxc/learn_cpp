@@ -5,18 +5,18 @@ using namespace std;
 
 int main()
 {
-     // ÉùÃ÷Á½¸ö±äÁ¿£¬·Ö±ğ±íÊ¾µ±Ç°×Ö·û´®ºÍÉÏÒ»¸ö×Ö·û´®
+     // å£°æ˜ä¸¤ä¸ªå˜é‡ï¼Œåˆ†åˆ«è¡¨ç¤ºå½“å‰å­—ç¬¦ä¸²å’Œä¸Šä¸€ä¸ªå­—ç¬¦ä¸²
      string str, prvStr = "\0";
      while (cin >> str)
      {
           if (isupper(str[0]) && str == prvStr)
           {
-               cout << str << " :Á¬Ğø³öÏÖÁËÁ½´Î" << endl;
+               cout << str << " :è¿ç»­å‡ºç°äº†ä¸¤æ¬¡" << endl;
                break;
           }
           prvStr = str;
      }
-     cout << "Ã»ÓĞÖØ¸´³öÏÖµÄµ¥´Ê" << endl;
+     cout << "æ²¡æœ‰é‡å¤å‡ºç°çš„å•è¯" << endl;
 
      system("pause");
      return 0;

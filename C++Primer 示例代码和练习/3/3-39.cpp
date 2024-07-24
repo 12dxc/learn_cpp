@@ -5,17 +5,17 @@ using namespace std;
 
 int main()
 {
-    // ±È½ÏÁ½¸ö×Ö·û´®
+    // æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²
     // string
     string s1("hello");
     string s2("hello");
     if (s1 == s2)
     {
-        cout << "Á½¸ö×Ö·û´®ÏàµÈ" << endl;
+        cout << "ä¸¤ä¸ªå­—ç¬¦ä¸²ç›¸ç­‰" << endl;
     }
     else
     {
-        cout << "Á½¸ö×Ö·û´®²»ÏàµÈ" << endl;
+        cout << "ä¸¤ä¸ªå­—ç¬¦ä¸²ä¸ç›¸ç­‰" << endl;
     }
 
     // C style string
@@ -23,11 +23,11 @@ int main()
     char a2[] = "hello";
     if (strcmp(a1, a2) == 0)
     {
-        cout << "Á½¸ö×Ö·û´®ÏàµÈ" << endl;
+        cout << "ä¸¤ä¸ªå­—ç¬¦ä¸²ç›¸ç­‰" << endl;
     }
     else
     {
-        cout << "Á½¸ö×Ö·û´®²»ÏàµÈ" << endl;
+        cout << "ä¸¤ä¸ªå­—ç¬¦ä¸²ä¸ç›¸ç­‰" << endl;
     }
 
     return 0;

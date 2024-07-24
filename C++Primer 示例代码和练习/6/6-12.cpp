@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// �鿴�Ƿ��д�д��ĸ
+// 查看是否有大写字母
 bool any_capital(const string &str)
 {
 
@@ -13,7 +13,7 @@ bool any_capital(const string &str)
                return false;
      }
 }
-// ��ΪСд
+// 改为小写
 void to_lowercase(string &str)
 {
      for (auto &c : str)

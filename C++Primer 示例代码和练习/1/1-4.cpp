@@ -3,10 +3,10 @@ using namespace std;
 
 int main()
 {
-    cout << "ÇëÊäÈëÁ½¸öÊı×Ö:" << endl;
+    cout << "è¯·è¾“å…¥ä¸¤ä¸ªæ•°å­—:" << endl;
     int v1 = 0, v2 = 0;
     cin >> v1 >> v2;
-    cout << v1 << "ºÍ" << v2 << "µÄ»ıÎª:" << v1 * v2 << endl;
+    cout << v1 << "å’Œ" << v2 << "çš„ç§¯ä¸º:" << v1 * v2 << endl;
 
     return 0;
 }

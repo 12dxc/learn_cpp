@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // ÓÃcin¶ÁÈëÒ»×éÕûÊı²¢°ÑËüÃÇ´æµ½Ò»¸övector¶ÔÏóÖĞ
+    // ç”¨cinè¯»å…¥ä¸€ç»„æ•´æ•°å¹¶æŠŠå®ƒä»¬å­˜åˆ°ä¸€ä¸ªvectorå¯¹è±¡ä¸­
     int n;
     vector<int> v;
     while (cin >> n)

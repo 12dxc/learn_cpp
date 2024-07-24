@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-// ¶şÔªÎ½´Ê£¬´ËÓÃ×÷Ö¸¶¨sortÅÅĞò¹æÔò
+// äºŒå…ƒè°“è¯ï¼Œæ­¤ç”¨ä½œæŒ‡å®šsortæ’åºè§„åˆ™
 bool isShorter(const string &s1, const string &s2)
 {
     return s1.size() > s2.size();
@@ -24,7 +24,7 @@ auto elimDups(vector<string> &v) -> vector<string> &
     sort(v.begin(), v.end(), isShorter);
     println(v);
 
-    // Ê¹µÃÖ»³öÏÖÒÀ´ÎµÄµ¥´ÊÅÅÁĞÔÚÇ°²¿£¬²¢·µ»ØÖ¸Ïò²»ÖØ¸´ÇøÓòÖ®ºóµÄÒ»¸öµü´úÆ÷
+    // ä½¿å¾—åªå‡ºç°ä¾æ¬¡çš„å•è¯æ’åˆ—åœ¨å‰éƒ¨ï¼Œå¹¶è¿”å›æŒ‡å‘ä¸é‡å¤åŒºåŸŸä¹‹åçš„ä¸€ä¸ªè¿­ä»£å™¨
     auto end_unique = unique(v.begin(), v.end());
     println(v);
 
@@ -37,7 +37,7 @@ int main()
     vector<string> v{
         "1234", "1234", "1234", "Hi", "alan", "wang"};
     elimDups(v);
-    // °´×ÖµäĞò£¬µ«ÓĞ³¤¶ÈÅÅĞòÎ½´Ê
+    // æŒ‰å­—å…¸åºï¼Œä½†æœ‰é•¿åº¦æ’åºè°“è¯
     stable_sort(v.begin(), v.end(), isShorter);
     cout << "ex10.11 :\n";
     println(v);

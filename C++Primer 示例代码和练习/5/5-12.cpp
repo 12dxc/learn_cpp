@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
      unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0, spaceCnt = 0, tabCnt = 0, newLineCnt = 0, ffCnt = 0, flCnt = 0, fiCnt = 0;
-     // prech ���ڱ���ǰһ���ַ�
+     // prech 用于保存前一个字符
      char c, prech = '\0';
-     // noskipws �������հ׷���
+     // noskipws 不跳过空白符；
      while (cin >> noskipws >> c)
      {
           switch (c)
@@ -53,20 +53,20 @@ int main()
                     ++flCnt;
                break;
           }
-          // ����ǰ�ַ������洢��һ���ַ��ı���������֮�����ж�
+          // 将当前字符赋给存储上一个字符的变量，以在之后做判断
           prech = c;
      }
-     cout << "Ԫ��a���ֵĴ���: \t" << aCnt << '\n'
-          << "Ԫ��e���ֵĴ���: \t" << eCnt << '\n'
-          << "Ԫ��i���ֵĴ���: \t" << iCnt << '\n'
-          << "Ԫ��o���ֵĴ���: \t" << oCnt << '\n'
-          << "Ԫ��u���ֵĴ���: \t" << uCnt << '\n'
-          << "�ո���ֵĴ���: \t" << spaceCnt << '\n'
-          << "�Ʊ������ֵĴ���: \t" << tabCnt << '\n'
-          << "���з����ֵĴ���: \t" << newLineCnt << '\n'
-          << "ff ���ֵĴ���: \t" << ffCnt << '\n'
-          << "fl ���ֵĴ���: \t" << flCnt << '\n'
-          << "fi ���ֵĴ���: \t" << fiCnt << endl;
+     cout << "元音a出现的次数: \t" << aCnt << '\n'
+          << "元音e出现的次数: \t" << eCnt << '\n'
+          << "元音i出现的次数: \t" << iCnt << '\n'
+          << "元音o出现的次数: \t" << oCnt << '\n'
+          << "元音u出现的次数: \t" << uCnt << '\n'
+          << "空格出现的次数: \t" << spaceCnt << '\n'
+          << "制表符出现的次数: \t" << tabCnt << '\n'
+          << "换行符出现的次数: \t" << newLineCnt << '\n'
+          << "ff 出现的次数: \t" << ffCnt << '\n'
+          << "fl 出现的次数: \t" << flCnt << '\n'
+          << "fi 出现的次数: \t" << fiCnt << endl;
 
      system("pause");
      return 0;

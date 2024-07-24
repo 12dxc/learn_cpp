@@ -9,7 +9,7 @@ int main()
         sum += val;
         --val;
     }
-    cout << "10~0�ĺ�Ϊ:" << sum;
+    cout << "10~0的和为:" << sum;
 
     return 0;
 }

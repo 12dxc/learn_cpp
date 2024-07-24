@@ -5,7 +5,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    signal(SIGPIPE, SIG_IGN); // 忽略信号
+    signal(SIGPIPE, SIG_IGN); // 恙썹븼岳▼뤇
     unsigned short port = 8080;
     if (argc > 1)
         port = atoi(argv[1]);

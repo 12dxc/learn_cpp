@@ -3,13 +3,13 @@ using namespace std;
 
 void print_range(int lnum, int rnum)
 {
-    if (lnum > rnum) // Èç¹ûÊäÈëµÄ×óÊı±ÈÓÒÊı´ó£¬Ôò½»»»´«²Î£¬Çó·¶Î§ÄÚËùÓĞÊı
+    if (lnum > rnum) // å¦‚æœè¾“å…¥çš„å·¦æ•°æ¯”å³æ•°å¤§ï¼Œåˆ™äº¤æ¢ä¼ å‚ï¼Œæ±‚èŒƒå›´å†…æ‰€æœ‰æ•°
     {
         print_range(rnum, lnum);
         return;
     }
     int num;
-    while (lnum <= rnum) // µ±×óÊıĞ¡ÓÚµÈÓÚÓÒÊıÊ±£¬ÒâÎ¶×ÅÒÑµÃµ½ËüÃÇÖ®¼äµÄËùÓĞÊı
+    while (lnum <= rnum) // å½“å·¦æ•°å°äºç­‰äºå³æ•°æ—¶ï¼Œæ„å‘³ç€å·²å¾—åˆ°å®ƒä»¬ä¹‹é—´çš„æ‰€æœ‰æ•°
     {
         cout << lnum << " ";
         ++lnum;
@@ -19,7 +19,7 @@ void print_range(int lnum, int rnum)
 
 int main()
 {
-    cout << "ÇëÊäÈëÁ½¸öÕûÊı:" << endl;
+    cout << "è¯·è¾“å…¥ä¸¤ä¸ªæ•´æ•°:" << endl;
     int lnum = 0, rnum = 0;
     cin >> lnum >> rnum;
 

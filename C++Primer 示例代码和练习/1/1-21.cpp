@@ -4,16 +4,16 @@ using namespace std;
 
 int main()
 {
-    cout << "ÇëÊäÈëÁ½±¾ÓµÓÐÏàÍ¬µÄISBNºÅµÄÊé¡¢ÊÛ³öµÄ²áÊýÒÔ¼°ÏúÊÛ¼Û¸ñ" << endl;
+    cout << "è¯·è¾“å…¥ä¸¤æœ¬æ‹¥æœ‰ç›¸åŒçš„ISBNå·çš„ä¹¦ã€å”®å‡ºçš„å†Œæ•°ä»¥åŠé”€å”®ä»·æ ¼" << endl;
     Sales_item book1, book2;
     cin >> book1 >> book2;
     if (book1.isbn() == book2.isbn())
     {
-        cout << book1 + book2 << endl; // ºÍÎª ×ÜÏúÊÛ¶îÏà¼ÓÇÒµ¥¼ÛÇóÆ½¾ù
+        cout << book1 + book2 << endl; // å’Œä¸º æ€»é”€å”®é¢ç›¸åŠ ä¸”å•ä»·æ±‚å¹³å‡
     }
     else
     {
-        cout << "ÊéºÅ²»ÏàÍ¬" << endl;
+        cout << "ä¹¦å·ä¸ç›¸åŒ" << endl;
     }
     return 0;
 }

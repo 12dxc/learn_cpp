@@ -4,30 +4,30 @@ using namespace std;
 
 struct Person
 {
-    // ³ÉÔ±Êı¾İ
-    string name;    // ĞÕÃû
-    string address; // µØÖ·
+    // æˆå‘˜æ•°æ®
+    string name;    // å§“å
+    string address; // åœ°å€
 
-    // ³ÉÔ±º¯Êı
-    // »ñÈ¡ĞÕÃû
+    // æˆå‘˜å‡½æ•°
+    // è·å–å§“å
     string const &get_name() const
     {
         return this->name;
     }
-    // »ñÈ¡µØÖ·
+    // è·å–åœ°å€
     string const &get_address() const
     {
         return this->address;
     }
 };
 
-// ÓëÀàÏà¹ØµÄÀàÍâº¯Êı
-// ¶ÁÈ¡ĞÅÏ¢
+// ä¸ç±»ç›¸å…³çš„ç±»å¤–å‡½æ•°
+// è¯»å–ä¿¡æ¯
 istream &read(istream &is, Person &p)
 {
     return is >> p.name >> p.address;
 }
-// ´òÓ¡ĞÅÏ¢
+// æ‰“å°ä¿¡æ¯
 ostream &print(ostream &os, Person &p)
 {
     return os << p.get_name() << " " << p.get_address() << endl;

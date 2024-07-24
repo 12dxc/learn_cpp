@@ -8,7 +8,7 @@ int main()
      unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0, spaceCnt = 0, tabCnt = 0, newLineCnt = 0;
      ;
      char c;
-     // noskipws ²»Ìø¹ý¿Õ°×·û£»
+     // noskipws ä¸è·³è¿‡ç©ºç™½ç¬¦ï¼›
      while (cin >> noskipws >> c)
      {
           switch (c)
@@ -44,14 +44,14 @@ int main()
                break;
           }
      }
-     cout << "ÔªÒôa³öÏÖµÄ´ÎÊý: \t" << aCnt << '\n'
-          << "ÔªÒôe³öÏÖµÄ´ÎÊý: \t" << eCnt << '\n'
-          << "ÔªÒôi³öÏÖµÄ´ÎÊý: \t" << iCnt << '\n'
-          << "ÔªÒôo³öÏÖµÄ´ÎÊý: \t" << oCnt << '\n'
-          << "ÔªÒôu³öÏÖµÄ´ÎÊý: \t" << uCnt << '\n'
-          << "¿Õ¸ñ³öÏÖµÄ´ÎÊý: \t" << spaceCnt << '\n'
-          << "ÖÆ±í·û³öÏÖµÄ´ÎÊý: \t" << tabCnt << '\n'
-          << "»»ÐÐ·û³öÏÖµÄ´ÎÊý: \t" << newLineCnt << endl;
+     cout << "å…ƒéŸ³aå‡ºçŽ°çš„æ¬¡æ•°: \t" << aCnt << '\n'
+          << "å…ƒéŸ³eå‡ºçŽ°çš„æ¬¡æ•°: \t" << eCnt << '\n'
+          << "å…ƒéŸ³iå‡ºçŽ°çš„æ¬¡æ•°: \t" << iCnt << '\n'
+          << "å…ƒéŸ³oå‡ºçŽ°çš„æ¬¡æ•°: \t" << oCnt << '\n'
+          << "å…ƒéŸ³uå‡ºçŽ°çš„æ¬¡æ•°: \t" << uCnt << '\n'
+          << "ç©ºæ ¼å‡ºçŽ°çš„æ¬¡æ•°: \t" << spaceCnt << '\n'
+          << "åˆ¶è¡¨ç¬¦å‡ºçŽ°çš„æ¬¡æ•°: \t" << tabCnt << '\n'
+          << "æ¢è¡Œç¬¦å‡ºçŽ°çš„æ¬¡æ•°: \t" << newLineCnt << endl;
 
      system("pause");
      return 0;

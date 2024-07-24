@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-// ÇóÊı½×³Ë
+// æ±‚æ•°é˜¶ä¹˜
 int absolute_value(int i)
 {
 
-     return i > 0 ? i : -i; // ¸ºÊıÔÙ¼ÓÒ»¸ö¸ººÅ¼´¿É×ªÎªÕıÊı
+     return i > 0 ? i : -i; // è´Ÿæ•°å†åŠ ä¸€ä¸ªè´Ÿå·å³å¯è½¬ä¸ºæ­£æ•°
 }
 int main()
 {
-     cout << "ÇëÊäÈëÒ»¸öÊı×Ö:" << endl;
+     cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—:" << endl;
      int n;
      cin >> n;
-     cout << n << " µÄ¾ø¶ÔÖµ: " << absolute_value(n) << endl;
+     cout << n << " çš„ç»å¯¹å€¼: " << absolute_value(n) << endl;
 
      system("pause");
      return 0;

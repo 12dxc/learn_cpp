@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // ÓÃcin¶ÁÈëÒ»×é×Ö·û´®²¢°ÑËüÃÇ´æµ½Ò»¸övector¶ÔÏóÖĞ
+    // ç”¨cinè¯»å…¥ä¸€ç»„å­—ç¬¦ä¸²å¹¶æŠŠå®ƒä»¬å­˜åˆ°ä¸€ä¸ªvectorå¯¹è±¡ä¸­
     string s;
     vector<string> v;
     while (cin >> s)

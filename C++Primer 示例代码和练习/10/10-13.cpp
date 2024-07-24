@@ -12,7 +12,7 @@ bool predicate(const string &s)
 int main()
 {
     auto v = vector<string>{"a", "as", "aasss", "aaaaassaa", "aaaaaabba", "aaa"};
-    // 对容器内容进行划分，符合谓词的放前面，否则放后面
+    // 瀵瑰鍣ㄥ唴瀹硅繘琛屽垝鍒嗭紝绗﹀悎璋撹瘝鐨勬斁鍓嶉潰锛屽惁鍒欐斁鍚庨潰
     auto newEnd = partition(v.begin(), v.end(), predicate);
 
     for (auto it = v.begin(); it != newEnd; it++)

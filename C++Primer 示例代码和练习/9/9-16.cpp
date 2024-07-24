@@ -3,13 +3,13 @@
 #include <list>
 using namespace std;
 
-// 判断两个向量是否相等
+// 鍒ゆ柇涓や釜鍚戦噺鏄惁鐩哥瓑
 int main()
 {
     vector<int> v{1, 2, 3};
     list<int> l{1, 2, 3, 4};
 
-    // 不同容器之间比较，只能将容器中的元素拷到另一个与之相同的容器类型
+    // 涓嶅悓瀹瑰櫒涔嬮棿姣旇緝锛屽彧鑳藉皢瀹瑰櫒涓殑鍏冪礌鎷峰埌鍙︿竴涓笌涔嬬浉鍚岀殑瀹瑰櫒绫诲瀷
     if (v == vector<int>(l.begin(), l.end()))
     {
         cout << "vector == list" << endl;

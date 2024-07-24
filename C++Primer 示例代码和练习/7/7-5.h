@@ -3,17 +3,17 @@ using namespace std;
 
 class Person
 {
-    // 成员数据
-    string name;    // 姓名
-    string address; // 地址
+    // 鎴愬憳鏁版嵁
+    string name;    // 濮撳悕
+    string address; // 鍦板潃
 public:
-    // 成员函数
-    // 获取姓名
+    // 鎴愬憳鍑芥暟
+    // 鑾峰彇濮撳悕
     string get_name() const
     {
         return this->name;
     }
-    // 获取地址
+    // 鑾峰彇鍦板潃
     string get_address() const
     {
         return this->address;

@@ -2,36 +2,36 @@
 #include <string>
 using namespace std;
 
-// ´°¿ÚÀà
+// çª—å£ç±»
 class Screen
 {
 public:
     typedef string::size_type pos;
-    // Window_magrµÄ³ÉÔ±¿ÉÒÔ·ÃÎÊScreenÀàµÄË½ÓĞ²¿·Ö
+    // Window_magrçš„æˆå‘˜å¯ä»¥è®¿é—®Screenç±»çš„ç§æœ‰éƒ¨åˆ†
     friend class Window_mgr;
 
-    // ¹¹Ôìº¯Êı
+    // æ„é€ å‡½æ•°
     Screen() = default;
     Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht * wd, ' ') {}
     Screen(pos ht, pos wd, char c) : height(ht), width(wd), contents(ht * wd, c) {}
 
-    // ¶ÁÈ¡¹â±ê´¦µÄ×Ö·û
-    char get() const // ÒşÊ½ÄÚÁª
+    // è¯»å–å…‰æ ‡å¤„çš„å­—ç¬¦
+    char get() const // éšå¼å†…è”
     {
         return contents[cursor];
     }
-    // ¶ÁÈ¡Ö¸¶¨Î»ÖÃµÄ×Ö·û
-    inline char get(pos r, pos c) const // ÏÔÊ½ÄÚÁª
+    // è¯»å–æŒ‡å®šä½ç½®çš„å­—ç¬¦
+    inline char get(pos r, pos c) const // æ˜¾å¼å†…è”
     {
         return contents[r * width + c];
     }
-    Screen &move(pos r, pos c); // ÄÜÔÚÖ®ºó±»ÉèÎªÄÚÁª
+    Screen &move(pos r, pos c); // èƒ½åœ¨ä¹‹åè¢«è®¾ä¸ºå†…è”
 
-    // ÉèÖÃ³ÉÔ±º¯Êıcontents
+    // è®¾ç½®æˆå‘˜å‡½æ•°contents
     Screen &set(char);
     Screen &set(pos, pos, char);
 
-    // ´òÓ¡ÆÁÄ»µÄÄÚÈİ
+    // æ‰“å°å±å¹•çš„å†…å®¹
     const Screen &display(ostream &os) const
     {
         do_display(os);
@@ -44,11 +44,11 @@ public:
     };
 
 private:
-    // ¸Ãº¯Êı¸ºÔğÏÔÊ¾ScreenµÄÄÚÈİ
+    // è¯¥å‡½æ•°è´Ÿè´£æ˜¾ç¤ºScreençš„å†…å®¹
     void do_display(ostream &os) const {os << contents;}
-    pos cursor = 0;            // ¹â±êµÄÎ»ÖÃ
-    pos height = 0, width = 0; // ÆÁÄ»¿í¸ß
-    string contents;            // ScreenµÄÄÚÈİ
+    pos cursor = 0;            // å…‰æ ‡çš„ä½ç½®
+    pos height = 0, width = 0; // å±å¹•å®½é«˜
+    string contents;            // Screençš„å†…å®¹
 };
 
 inline Screen &Screen::move(pos r, pos c)
@@ -57,7 +57,7 @@ inline Screen &Screen::move(pos r, pos c)
     cursor = row + c;
     return *this;
 }
-// Ê¹ÓÃÒıÓÃ²ÅÄÜ¸Ä±äÖµ£¬¶ø·Ç¸±±¾
+// ä½¿ç”¨å¼•ç”¨æ‰èƒ½æ”¹å˜å€¼ï¼Œè€Œéå‰¯æœ¬
 Screen &Screen::set(char c)
 {
     contents[cursor] = c;

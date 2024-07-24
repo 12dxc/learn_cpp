@@ -10,14 +10,14 @@ int main()
     const char *c2 = "World";
     unsigned len = strlen(c1) + strlen(c2) + 1;
     char *r = new char[len]();
-    // Íù×Ö·û´®ºóÃæÌí¼Ó×Ö·û
+    // å¾€å­—ç¬¦ä¸²åé¢æ·»åŠ å­—ç¬¦
     strcat_s(r, len, c1);
     strcat_s(r, len, c2);
     cout << r << endl;
 
     string s1 = "hello ";
     string s2 = "world";
-    // ¿½±´×Ö·ûÖÁr
+    // æ‹·è´å­—ç¬¦è‡³r
     strcpy_s(r, len, (s1 + s2).c_str());
     cout << r << endl;
 

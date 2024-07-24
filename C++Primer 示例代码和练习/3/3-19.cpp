@@ -5,17 +5,17 @@ using namespace std;
 
 int main()
 {
-    // ¶¨ÒåÒ»¸öº¬ÓÐ10¸ö42µÄvector¶ÔÏó
-    // 1¡¢ÁÐ±í³õÊ¼»¯
+    // å®šä¹‰ä¸€ä¸ªå«æœ‰10ä¸ª42çš„vectorå¯¹è±¡
+    // 1ã€åˆ—è¡¨åˆå§‹åŒ–
     vector<int> v = {42, 42, 42, 42, 42, 42, 42, 42, 42, 42};
-    // 2¡¢¹¹Ôìº¯Êý³õÊ¼»¯
+    // 2ã€æž„é€ å‡½æ•°åˆå§‹åŒ–
     vector<int> v2(10, 42);
-    // 3¡¢forÑ­»·×·¼ÓÔªËØ
+    // 3ã€forå¾ªçŽ¯è¿½åŠ å…ƒç´ 
     vector<int> v3;
     for (int i = 0; i < 10; i++)
         v3.push_back(42);
 
-    // ÆäÖÐµÚ¶þÖÖ·½·¨×îÓÅ£¬´úÂëÁ¿×îÐ¡
+    // å…¶ä¸­ç¬¬äºŒç§æ–¹æ³•æœ€ä¼˜ï¼Œä»£ç é‡æœ€å°
 
     return 0;
 }

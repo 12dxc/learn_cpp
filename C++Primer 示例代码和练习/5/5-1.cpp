@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
      int sum = 0, val = 1;
-     // ÕâÖÖĞ´·¨´úÂë¿É¶ÁĞÔ²»¸ß
+     // è¿™ç§å†™æ³•ä»£ç å¯è¯»æ€§ä¸é«˜
      while (val <= 10)
           sum += val, ++val;
 

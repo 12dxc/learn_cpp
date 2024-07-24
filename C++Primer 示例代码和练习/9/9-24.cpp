@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     vector<int> v;
-    // 因是空容器，使用at会抛出一个out_of_range异常
+    // 鍥犱负鏄┖瀹瑰櫒锛屼娇鐢╝t浼氭姏鍑轰竴涓猳ut_of_range寮傚父
     cout << v.at(0);
     cout << v[0];
     cout << v.front();

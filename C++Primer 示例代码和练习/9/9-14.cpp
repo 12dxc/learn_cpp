@@ -7,7 +7,7 @@ int main()
 {
     list<const char *> l{"hello", "world"};
     vector<string> v;
-    // const char* 需用常量迭代器
+    // const char* 闇�鐢ㄥ父閲忚凯浠ｅ櫒
     v.assign(l.cbegin(), l.cend());
     for (auto i : v)
     {

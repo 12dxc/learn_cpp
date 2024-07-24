@@ -12,22 +12,22 @@ int main()
           {
                if (total.isbn() == trans.isbn())
                {
-                    // ¸üĞÂ±äÁ¿totalµ±Ç°µÄÖµ
+                    // æ›´æ–°å˜é‡totalå½“å‰çš„å€¼
                     total.combine(trans);
                }
                else
                {
-                    // Êä³ö½á¹û
+                    // è¾“å‡ºç»“æœ
                     cout << total.bookNo << " " << total.units_sold << " " << total.revenue << endl;
-                    total = trans; // ´¦ÀíÏÂÒ»±¾Êé
+                    total = trans; // å¤„ç†ä¸‹ä¸€æœ¬ä¹¦
                }
           }
-          // Êä³ö×îºóÒ»Ìõ½»Ò×
+          // è¾“å‡ºæœ€åä¸€æ¡äº¤æ˜“
           cout << total.bookNo << " " << total.units_sold << " " << total.revenue << endl;
      }
-     else // Ã»ÓĞÊäÈëÈÎºÎĞÅÏ¢
+     else // æ²¡æœ‰è¾“å…¥ä»»ä½•ä¿¡æ¯
      {
-          // Í¨ÖªÓÃ»§
+          // é€šçŸ¥ç”¨æˆ·
           cerr << "No data?!" << endl;
           return -1;
      }

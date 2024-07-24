@@ -10,14 +10,14 @@ int main()
      {
           string str1, str2;
 
-          cout << "ÇëÊäÈëÁ½¸ö×Ö·û´®:" << endl;
+          cout << "è¯·è¾“å…¥ä¸¤ä¸ªå­—ç¬¦ä¸²:" << endl;
           cin >> str1 >> str2;
           if (str1.size() > str2.size())
                cout << str1 << endl;
           else
                cout << str2 << endl;
 
-          cout << "ÇëÎÊÊÇ·ñ»¹Òª¼ÌĞøÊä³ö yes or no" << endl;
+          cout << "è¯·é—®æ˜¯å¦è¿˜è¦ç»§ç»­è¾“å‡º yes or no" << endl;
           cin >> rsp;
 
      } while (rsp[0] == 'y');

@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "ÇëÊäÈëISBNºÅ¡¢ÊÛ³öµÄ²áÊýÒÔ¼°ÏúÊÛ¼Û¸ñ" << endl;
+    cout << "è¯·è¾“å…¥ISBNå·ã€å”®å‡ºçš„å†Œæ•°ä»¥åŠé”€å”®ä»·æ ¼" << endl;
     for (Sales_item book; cin >> book; cout << book << endl)
         ;
     return 0;

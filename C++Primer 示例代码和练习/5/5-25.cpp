@@ -6,24 +6,24 @@ using namespace std;
 int main()
 {
      int i, j;
-     cout << "ÇëÊäÈëÁ½¸öÊı: " << endl;
+     cout << "è¯·è¾“å…¥ä¸¤ä¸ªæ•°: " << endl;
      while (cin >> i >> j)
      {
           try
           {
                if (j == 0)
-                    throw runtime_error("³ıÊı²»ÄÜÎª0");
+                    throw runtime_error("é™¤æ•°ä¸èƒ½ä¸º0");
                cout << i / j << endl;
           }
           catch (runtime_error err)
           {
-               cout << err.what() << "\nÒªÔÙÊÔÒ»´ÎÂğ£¬yes or no" << endl;
+               cout << err.what() << "\nè¦å†è¯•ä¸€æ¬¡å—ï¼Œyes or no" << endl;
                char c;
                cin >> c;
                if (c != 'y')
                     break;
           }
-          cout << "ÇëÊäÈëÁ½¸öÊı: " << endl;
+          cout << "è¯·è¾“å…¥ä¸¤ä¸ªæ•°: " << endl;
      }
 
      system("pause");

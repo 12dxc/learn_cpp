@@ -13,28 +13,28 @@ public:
     StrBlob(initializer_list<string> il) : data(make_shared<vector<string>>(il)) {}
     size_type size() const { return data->size(); }
     bool empty() const { return data->empty(); }
-    // Ìí¼ÓºÍÉ¾³ýÔªËØ
+    // æ·»åŠ å’Œåˆ é™¤å…ƒç´ 
     void push_back(const string &t) { data->push_back(t); }
     void pop_back()
     {
-        check(0, "StrBlob Î²ÔªËØÎª¿Õ");
+        check(0, "StrBlob å°¾å…ƒç´ ä¸ºç©º");
         data->pop_back();
     }
-    // ÔªËØ·ÃÎÊ
+    // å…ƒç´ è®¿é—®
     string &front() const
     {
-        check(0, "StrBlob Í·ÔªËØÎª¿Õ");
+        check(0, "StrBlob å¤´å…ƒç´ ä¸ºç©º");
         return data->front();
     }
     string &back() const
     {
-        check(0, "StrBlob Î²ÔªËØÎª¿Õ");
+        check(0, "StrBlob å°¾å…ƒç´ ä¸ºç©º");
         return data->back();
     }
 
 private:
     shared_ptr<vector<string>> data;
-    // Èç¹ûdata[i]²»ºÏ·¨£¬Å×³öÒ»¸öÒì³£
+    // å¦‚æžœdata[i]ä¸åˆæ³•ï¼ŒæŠ›å‡ºä¸€ä¸ªå¼‚å¸¸
     void check(size_type i, const string &msg) const
     {
         if (i >= data->size())

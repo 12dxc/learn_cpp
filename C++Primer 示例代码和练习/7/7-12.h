@@ -4,34 +4,34 @@ using namespace std;
 
 struct Sales_data
 {
-     // ĞÂÔöµÄ¹¹Ôìº¯Êı
+     // æ–°å¢çš„æ„é€ å‡½æ•°
      Sales_data() = default;
      Sales_data(const string &s) : bookNo(s) {}
      Sales_data(const string &s, unsigned n, double p) : bookNo(s), units_sold(n), revenue(p * n) {}
-     // ÊäÈëÁ÷³õÊ¼»¯¹¹Ôìº¯Êı
+     // è¾“å…¥æµåˆå§‹åŒ–æ„é€ å‡½æ•°
      Sales_data(istream &) { read(cin, *this); }
 
-     // ³ÉÔ±º¯Êı
-     // »ñÈ¡ÊéºÅ
-     string isbn() const // ¼ÓconstÊ¹µÃÄÚ²¿¶¨Òå²»¿ÉĞŞ¸ÄÊı¾İ
+     // æˆå‘˜å‡½æ•°
+     // è·å–ä¹¦å·
+     string isbn() const // åŠ constä½¿å¾—å†…éƒ¨å®šä¹‰ä¸å¯ä¿®æ”¹æ•°æ®
      {
           return this->bookNo;
      }
-     // ½«Ò»¸ö¶ÔÏó¼Óµ½ÁíÒ»¸ö¶ÔÏó
+     // å°†ä¸€ä¸ªå¯¹è±¡åŠ åˆ°å¦ä¸€ä¸ªå¯¹è±¡
      Sales_data &combine(const Sales_data &rhs);
-     // »ñÈ¡ÊÛ³öÊé¼®µÄÆ½¾ù¼Û¸ñ
+     // è·å–å”®å‡ºä¹¦ç±çš„å¹³å‡ä»·æ ¼
      double avg_price() const;
 
-     // Êı¾İ³ÉÔ±
-     //  ÊéºÅ
+     // æ•°æ®æˆå‘˜
+     //  ä¹¦å·
      string bookNo;
-     // ÏúÁ¿
+     // é”€é‡
      unsigned units_sold = 0;
-     // ÏúÊÛ¶î
+     // é”€å”®é¢
      double revenue = 0.0;
 };
 
-// ³ÉÔ±º¯ÊıÀàÍâ¶¨Òå  ĞèÖ¸¶¨×÷ÓÃÓò
+// æˆå‘˜å‡½æ•°ç±»å¤–å®šä¹‰  éœ€æŒ‡å®šä½œç”¨åŸŸ
 double Sales_data::avg_price() const
 {
      if (units_sold)
@@ -49,26 +49,26 @@ Sales_data &Sales_data::combine(const Sales_data &rhs)
      revenue += rhs.revenue;
      return *this;
 }
-// ÓëÀàÏà¹ØµÄ·Ç³ÉÔ±º¯Êı
-//  Ïà¼Ó²Ù×÷
+// ä¸ç±»ç›¸å…³çš„éæˆå‘˜å‡½æ•°
+//  ç›¸åŠ æ“ä½œ
 Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
 {
-     Sales_data sum = lhs; // °ÑlhsµÄÊı¾İ³ÉÔ±¿½±´¸øsum
+     Sales_data sum = lhs; // æŠŠlhsçš„æ•°æ®æˆå‘˜æ‹·è´ç»™sum
      sum.combine(rhs);
      return sum;
 }
-// ÊäÈë²Ù×÷
+// è¾“å…¥æ“ä½œ
 istream &read(istream &is, Sales_data &item)
 {
-     // ÉèÖÃµ¥¼Û
+     // è®¾ç½®å•ä»·
      double price = 0;
      is >> item.bookNo >> item.units_sold >> price;
-     // ÎªÏúÊÛ¶î¸³Öµ  ¼´ÊäÈëµÄµ¥¼Û * ÏúÁ¿
+     // ä¸ºé”€å”®é¢èµ‹å€¼  å³è¾“å…¥çš„å•ä»· * é”€é‡
      item.revenue = price * item.units_sold;
 
      return is;
 }
-// Êä³ö²Ù×÷
+// è¾“å‡ºæ“ä½œ
 ostream &print(ostream &os, const Sales_data &item)
 {
      os << item.isbn() << " " << item.units_sold << " " << item.revenue << " " << item.avg_price() << endl;

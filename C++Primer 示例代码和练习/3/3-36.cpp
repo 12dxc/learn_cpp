@@ -2,10 +2,10 @@
 #include <vector>
 using namespace std;
 
-// ±È½ÏÁ½¸öÊı×éÊÇ·ñÏàµÈ
+// æ¯”è¾ƒä¸¤ä¸ªæ•°ç»„æ˜¯å¦ç›¸ç­‰
 bool compare(int *pb1, int *pe1, int *pb2, int *pe2)
 {
-    // ÏÈ±È½Ï³¤¶È£¬Èç¹ûÏàµÈÔÙÒÀ´Î±È½ÏÃ¿¸öÔªËØ
+    // å…ˆæ¯”è¾ƒé•¿åº¦ï¼Œå¦‚æœç›¸ç­‰å†ä¾æ¬¡æ¯”è¾ƒæ¯ä¸ªå…ƒç´ 
     if ((pe1 - pb1) != (pe2 - pb2))
     {
         return false;
@@ -30,25 +30,25 @@ int main()
 
     if (compare(begin(arr1), end(arr1), begin(arr2), end(arr2)))
     {
-        cout << "Êı×éÏàµÈ" << endl;
+        cout << "æ•°ç»„ç›¸ç­‰" << endl;
     }
     else
     {
-        cout << "Êı×é²»ÏàµÈ" << endl;
+        cout << "æ•°ç»„ä¸ç›¸ç­‰" << endl;
     }
 
     cout << "===========================" << endl;
 
-    // ¶Ô±ÈÁ½¸öÏòÁ¿
+    // å¯¹æ¯”ä¸¤ä¸ªå‘é‡
     vector<int> v1 = {1, 2, 3};
     vector<int> v2 = {1, 2, 3};
     if (v1 == v2)
     {
-        cout << "Êı×éÏàµÈ" << endl;
+        cout << "æ•°ç»„ç›¸ç­‰" << endl;
     }
     else
     {
-        cout << "Êı×é²»ÏàµÈ" << endl;
+        cout << "æ•°ç»„ä¸ç›¸ç­‰" << endl;
     }
 
     return 0;

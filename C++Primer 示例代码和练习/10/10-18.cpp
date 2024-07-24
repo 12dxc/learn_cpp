@@ -12,16 +12,16 @@ void elimDups(vector<string> &vs)
 }
 void biggies(vector<string> &words, vector<string>::size_type sz)
 {
-    elimDups(words); // ½«word°´×ÖµäÅÅĞò£¬É¾³ıÖØ¸´µ¥´Ê
-    // °´³¤¶ÈÅÅĞò
+    elimDups(words); // å°†wordæŒ‰å­—å…¸æ’åºï¼Œåˆ é™¤é‡å¤å•è¯
+    // æŒ‰é•¿åº¦æ’åº
     stable_sort(words.begin(), words.end(),
                 [](const string &a, const string &b)
                 { return a.size() < b.size(); });
-    // »ñÈ¡Ò»¸öµü´úÆ÷£¬Ö¸ÏòµÚÒ»¸öÂú×ãsize()>=szµÄÔªËØ
+    // è·å–ä¸€ä¸ªè¿­ä»£å™¨ï¼ŒæŒ‡å‘ç¬¬ä¸€ä¸ªæ»¡è¶³size()>=szçš„å…ƒç´ 
     auto wc = partition(words.begin(), words.end(),
                         [sz](const string &a)
                         { return a.size() >= sz; });
-    // Ñ­»·´òÓ¡
+    // å¾ªç¯æ‰“å°
     for_each(words.begin(), wc,
              [](const string &s)
              { std::cout << s << " "; });
@@ -31,7 +31,7 @@ int main()
 {
     vector<string> v{
         "1234", "1234", "1234", "hi~", "alan", "alan", "cp"};
-    cout << "´óÓÚµÈÓÚ3µÄ·ÇÖØ¸´×Ö·û´®: ";
+    cout << "å¤§äºç­‰äº3çš„éé‡å¤å­—ç¬¦ä¸²: ";
     biggies(v, 3);
     cout << endl;
 

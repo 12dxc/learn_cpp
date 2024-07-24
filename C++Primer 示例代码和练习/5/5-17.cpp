@@ -18,7 +18,7 @@ bool is_prefix(vector<int> &v1, vector<int> &v2)
      }
      else
      {
-          // Èç¹ûv2±Èv1´ó£¬Ö±½ÓÊ¹ÓÃ»»²Î¼ÌÐøµ÷ÓÃ±¾º¯Êý
+          // å¦‚æžœv2æ¯”v1å¤§ï¼Œç›´æŽ¥ä½¿ç”¨æ¢å‚ç»§ç»­è°ƒç”¨æœ¬å‡½æ•°
           is_prefix(v2, v1);
      }
 }

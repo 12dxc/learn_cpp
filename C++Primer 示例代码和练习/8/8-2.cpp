@@ -8,7 +8,7 @@ istream &func(istream &is)
      {
           cout << s << endl;
      }
-     // ¶ÔÁ÷¸´Î»
+     // å¯¹æµå¤ä½
      is.clear();
      return is;
 }
@@ -16,7 +16,7 @@ istream &func(istream &is)
 int main()
 {
      istream &is = func(cin);
-     // ·µ»ØÁ÷Ìõ¼ş×´Ì¬
+     // è¿”å›æµæ¡ä»¶çŠ¶æ€
      cout << is.rdstate() << endl;
      return 0;
 }

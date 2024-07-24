@@ -18,7 +18,7 @@ auto elimDups(vector<string> &v) -> vector<string> &
     sort(v.begin(), v.end());
     println(v);
 
-    // 使得只出现依次的单词排列在前部，并返回指向不重复区域之后的一个迭代器
+    // 浣垮緱鍙嚭鐜颁緷娆＄殑鍗曡瘝鎺掑垪鍦ㄥ墠閮紝骞惰繑鍥炴寚鍚戜笉閲嶅鍖哄煙涔嬪悗鐨勪竴涓凯浠ｅ櫒
     auto end_unique = unique(v.begin(), v.end());
     println(v);
 

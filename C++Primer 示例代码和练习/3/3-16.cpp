@@ -5,7 +5,7 @@ using namespace std;
 template <class T>
 void myPrint(vector<T> &v)
 {
-    cout << v.size() << " ����Ϊ: ";
+    cout << v.size() << " 内容为: ";
     for (auto i : v)
     {
         cout << i;
@@ -23,19 +23,19 @@ int main()
     vector<string> v6{10};       // size:10, value:""
     vector<string> v7{10, "hi"}; // size:10, value:"hi"
 
-    cout << "v1 �Ĵ�СΪ: ";
+    cout << "v1 的大小为: ";
     myPrint<int>(v1);
-    cout << "v2 �Ĵ�СΪ: ";
+    cout << "v2 的大小为: ";
     myPrint<int>(v2);
-    cout << "v3 �Ĵ�СΪ: ";
+    cout << "v3 的大小为: ";
     myPrint<int>(v3);
-    cout << "v4 �Ĵ�СΪ: ";
+    cout << "v4 的大小为: ";
     myPrint<int>(v4);
-    cout << "v5 �Ĵ�СΪ: ";
+    cout << "v5 的大小为: ";
     myPrint<int>(v5);
-    cout << "v6 �Ĵ�СΪ: ";
+    cout << "v6 的大小为: ";
     myPrint<string>(v6);
-    cout << "v7 �Ĵ�СΪ: ";
+    cout << "v7 的大小为: ";
     myPrint<string>(v7);
 
     return 0;

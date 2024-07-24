@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// ÇóÊý½×³Ë
+// æ±‚æ•°é˜¶ä¹˜
 int fact(int i)
 {
 
@@ -9,10 +9,10 @@ int fact(int i)
 }
 int main()
 {
-     cout << "ÇëÊäÈëÒ»¸öÊý×Ö:" << endl;
+     cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—:" << endl;
      int n;
      cin >> n;
-     cout << n << " µÄ½×³ËÎª: " << fact(n) << endl;
+     cout << n << " çš„é˜¶ä¹˜ä¸º: " << fact(n) << endl;
 
      system("pause");
      return 0;

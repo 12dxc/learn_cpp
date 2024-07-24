@@ -25,7 +25,7 @@ int main()
 {
     vector<string> v{
         "1234", "1234", "1234", "hi~", "alan", "alan", "cp"};
-    cout << "´óÓÚµÈÓÚ3µÄ·ÇÖØ¸´×Ö·û´®: ";
+    cout << "å¤§äºŽç­‰äºŽ3çš„éžé‡å¤å­—ç¬¦ä¸²: ";
     biggies_stable_partition(v, 3);
     cout << endl;
 

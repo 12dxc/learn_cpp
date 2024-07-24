@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// ²éÕÒÔªËØÊÇ·ñÔÚÈİÆ÷ÖĞ²¢·µ»Ø
+// æŸ¥æ‰¾å…ƒç´ æ˜¯å¦åœ¨å®¹å™¨ä¸­å¹¶è¿”å›
 int find(vector<int> &v, int target)
 {
 
@@ -13,7 +13,7 @@ int find(vector<int> &v, int target)
             return *it;
         }
     }
-    // ·µ»Ø-1Î´ÕÒµ½
+    // è¿”å›-1æœªæ‰¾åˆ°
     return -1;
 }
 

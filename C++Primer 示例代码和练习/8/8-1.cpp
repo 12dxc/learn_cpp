@@ -8,7 +8,7 @@ istream &func(istream &is)
      {
           cout << s << endl;
      }
-     // 对流复位
+     // 瀵规祦澶嶄綅
      is.clear();
      return is;
 }

@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // ½«vectorµÄÔªËØ¿½±´µ½Êı×éÖĞ
+    // å°†vectorçš„å…ƒç´ æ‹·è´åˆ°æ•°ç»„ä¸­
     vector<int> v = {1, 2, 3, 4, 5, 6};
     int arr[v.size()];
     for (int i = 0; i != v.size(); i++)

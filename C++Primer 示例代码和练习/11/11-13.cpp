@@ -11,11 +11,11 @@ int main()
 
     while (cin >> str >> n)
     {
-        // º¯Êı·½·¨·µ»Øpair
+        // å‡½æ•°æ–¹æ³•è¿”å›pair
         v.push_back(make_pair(str, n));
-        // ¹¹Ôìº¯Êı³õÊ¼»¯
+        // æ„é€ å‡½æ•°åˆå§‹åŒ–
         v.push_back(pair<string, int>(str, n));
-        // ÁĞ±í³õÊ¼»¯
+        // åˆ—è¡¨åˆå§‹åŒ–
         v.push_back({str, n});
     }
 

@@ -3,29 +3,29 @@ using namespace std;
 
 struct Sales_data
 {
-     // ³ÉÔ±º¯Êı
-     // »ñÈ¡ÊéºÅ
-     string isbn() const // ¼ÓconstÊ¹µÃÄÚ²¿¶¨Òå²»¿ÉĞŞ¸ÄÊı¾İ
+     // æˆå‘˜å‡½æ•°
+     // è·å–ä¹¦å·
+     string isbn() const // åŠ constä½¿å¾—å†…éƒ¨å®šä¹‰ä¸å¯ä¿®æ”¹æ•°æ®
      {
           return this->bookNo;
      }
 
-     // ½«Ò»¸ö¶ÔÏó¼Óµ½ÁíÒ»¸ö¶ÔÏó
+     // å°†ä¸€ä¸ªå¯¹è±¡åŠ åˆ°å¦ä¸€ä¸ªå¯¹è±¡
      Sales_data &combine(const Sales_data &rhs);
 
-     // »ñÈ¡ÊÛ³öÊé¼®µÄÆ½¾ù¼Û¸ñ
+     // è·å–å”®å‡ºä¹¦ç±çš„å¹³å‡ä»·æ ¼
      double avg_price() const;
 
-     // Êı¾İ³ÉÔ±
-     //  ÊéºÅ
+     // æ•°æ®æˆå‘˜
+     //  ä¹¦å·
      string bookNo;
-     // ÏúÁ¿
+     // é”€é‡
      unsigned units_sold = 0;
-     // ÏúÊÛ¶î
+     // é”€å”®é¢
      double revenue = 0.0;
 };
 
-// ³ÉÔ±º¯ÊıÀàÍâ¶¨Òå  ĞèÖ¸¶¨×÷ÓÃÓò
+// æˆå‘˜å‡½æ•°ç±»å¤–å®šä¹‰  éœ€æŒ‡å®šä½œç”¨åŸŸ
 double Sales_data::avg_price() const
 {
      if (units_sold)

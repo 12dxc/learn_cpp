@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// 判断两个向量是否相等
+// 鍒ゆ柇涓や釜鍚戦噺鏄惁鐩哥瓑
 int main()
 {
     vector<int> v1{1, 2, 3}, v2{1, 2, 3, 4};

@@ -6,8 +6,8 @@ using namespace std;
 int main()
 {
     vector<string> vStr = {"hello", "world.", "HI"};
-    // string对象可能非常大，所以将s声明为引用类型可以避免对元素的拷贝，
-    // 但又因为不对string对象做读写操作，所以s被声明为常量引用
+    // string瀵硅薄鍙兘闈炲父澶э紝鎵�浠ュ皢s澹版槑涓哄紩鐢ㄧ被鍨嬪彲浠ラ伩鍏嶅鍏冪礌鐨勬嫹璐濓紝
+    // 浣嗗張鍥犱负涓嶅string瀵硅薄鍋氳鍐欐搷浣滐紝鎵�浠琚０鏄庝负甯搁噺寮曠敤
     for (const auto &s : vStr)
     {
         cout << s;

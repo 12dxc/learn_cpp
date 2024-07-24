@@ -1,4 +1,4 @@
-﻿#include "widget.h"
+#include "widget.h"
 #include "ui_widget.h"
 #include <QFileDialog>   // 文件对话框
 #include <QColorDialog>  // 颜色对话框

@@ -5,22 +5,22 @@ using namespace std;
 
 int main()
 {
-    // ½«ia¿½±´µ½listºÍvector
+    // å°†iaæ‹·è´åˆ°listå’Œvector
     int ia[] = {0, 1, 1, 2, 3, 5, 8, 13, 21, 55, 89};
     list<int> l(ia, end(ia));
     vector<int> v(l.begin(), l.end());
 
-    // Ê¹ÓÃµ¥µü´úÆ÷°æµÄearselistÉ¾³ıÆæÊıÔªËØ£¬vectorÉ¾³ıÅ¼ÊıÔªËØ
+    // ä½¿ç”¨å•è¿­ä»£å™¨ç‰ˆçš„earseliståˆ é™¤å¥‡æ•°å…ƒç´ ï¼Œvectoråˆ é™¤å¶æ•°å…ƒç´ 
     for (auto it = l.begin(); it != l.end();)
     {
         if (*it % 2 != 0)
         {
-            // earse·µ»ØÏÂÒ»¸öÔªËØµü´úÆ÷£¬Ïàµ±ÓÚµü´ú
+            // earseè¿”å›ä¸‹ä¸€ä¸ªå…ƒç´ è¿­ä»£å™¨ï¼Œç›¸å½“äºè¿­ä»£
             it = l.erase(it);
         }
         else
         {
-            // Èç¹û²»ÊÇÆæÊıÔòµü´ú
+            // å¦‚æœä¸æ˜¯å¥‡æ•°åˆ™è¿­ä»£
             it++;
         }
     }

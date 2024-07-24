@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// 查找元素是否在容器中
+// 鏌ユ壘鍏冪礌鏄惁鍦ㄥ鍣ㄤ腑
 bool find(vector<int> &v, int target)
 {
 

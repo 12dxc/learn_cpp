@@ -8,7 +8,7 @@ int main()
     {
         sum += num;
     }
-    // windows 输入文件结束符的方式是：ctrl+Z -> Enter
+    // windows 杈撳叆鏂囦欢缁撴潫绗︾殑鏂瑰紡鏄細ctrl+Z -> Enter
 
     cout << sum;
     return 0;

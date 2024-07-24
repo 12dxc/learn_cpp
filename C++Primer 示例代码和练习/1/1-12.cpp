@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Ê¹ÓÃforÑ­»·ÖØĞ´1.4.1Á·Ï°
+// ä½¿ç”¨forå¾ªç¯é‡å†™1.4.1ç»ƒä¹ 
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
     {
         sum += i;
     }
-    cout << "50~100µÄºÍÎª:" << sum << endl;
+    cout << "50~100çš„å’Œä¸º:" << sum << endl;
 
     // 1.10
     sum = 0;
@@ -19,14 +19,14 @@ int main()
     {
         sum += i;
     }
-    cout << "10~0µÄºÍÎª:" << sum << endl;
+    cout << "10~0çš„å’Œä¸º:" << sum << endl;
 
     // 1.11
     sum = 0;
     int lnum = 0, rnum = 0;
-    cout << "ÇëÊäÈëÁ½¸öÊı:" << endl;
+    cout << "è¯·è¾“å…¥ä¸¤ä¸ªæ•°:" << endl;
     cin >> lnum >> rnum;
-    cout << lnum << "~" << rnum << "·¶Î§ÄÚµÄÊıÓĞ:" << endl;
+    cout << lnum << "~" << rnum << "èŒƒå›´å†…çš„æ•°æœ‰:" << endl;
     for (int i = lnum; i <= rnum; i++)
     {
         cout << i << " ";

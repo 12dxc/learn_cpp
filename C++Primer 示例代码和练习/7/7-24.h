@@ -2,33 +2,33 @@
 #include <string>
 using namespace std;
 
-// ´°¿ÚÀà
+// çª—å£ç±»
 class Screen
 {
 public:
     typedef string::size_type pos;
 
-    // ¹¹Ôìº¯Êı
+    // æ„é€ å‡½æ•°
     Screen() = default;
     Screen(pos ht, pos wd) : height(ht), width(wd), content(ht * wd, ' ') {}
     Screen(pos ht, pos wd, char c) : height(ht), width(wd), content(ht * wd, c) {}
 
-    // ¶ÁÈ¡¹â±ê´¦µÄ×Ö·û
-    char get() const // ÒşÊ½ÄÚÁª
+    // è¯»å–å…‰æ ‡å¤„çš„å­—ç¬¦
+    char get() const // éšå¼å†…è”
     {
         return content[cursor];
     }
-    // ¶ÁÈ¡Ö¸¶¨Î»ÖÃµÄ×Ö·û
-    inline char get(pos r, pos c) const // ÏÔÊ½ÄÚÁª
+    // è¯»å–æŒ‡å®šä½ç½®çš„å­—ç¬¦
+    inline char get(pos r, pos c) const // æ˜¾å¼å†…è”
     {
         return content[r * width + c];
     }
-    Screen &move(pos r, pos c); // ÄÜÔÚÖ®ºó±»ÉèÎªÄÚÁª
+    Screen &move(pos r, pos c); // èƒ½åœ¨ä¹‹åè¢«è®¾ä¸ºå†…è”
 
 private:
-    pos cursor = 0;            // ¹â±êµÄÎ»ÖÃ
-    pos height = 0, width = 0; // ÆÁÄ»¿í¸ß
-    string content;            // ScreenµÄÄÚÈİ
+    pos cursor = 0;            // å…‰æ ‡çš„ä½ç½®
+    pos height = 0, width = 0; // å±å¹•å®½é«˜
+    string content;            // Screençš„å†…å®¹
 };
 
 inline Screen &Screen::move(pos r, pos c)

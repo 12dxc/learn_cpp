@@ -3,11 +3,11 @@ using namespace std;
 
 struct Sales_data
 {
-     // ÊéºÅ
+     // ä¹¦å·
      string bookNo;
-     // ÏúÁ¿
+     // é”€é‡
      unsigned units_sold = 0;
-     // ÏúÊÛ¶î
+     // é”€å”®é¢
      double revenue = 0.0;
 };
 
@@ -21,23 +21,23 @@ int main()
           {
                if (total.bookNo == trans.bookNo)
                {
-                    // ¸üĞÂ±äÁ¿totalµ±Ç°µÄÖµ
+                    // æ›´æ–°å˜é‡totalå½“å‰çš„å€¼
                     total.units_sold = trans.units_sold;
                     total.revenue = total.revenue;
                }
                else
                {
-                    // Êä³ö½á¹û
+                    // è¾“å‡ºç»“æœ
                     cout << total.bookNo << " " << total.units_sold << " " << total.revenue << endl;
-                    total = trans; // ´¦ÀíÏÂÒ»±¾Êé
+                    total = trans; // å¤„ç†ä¸‹ä¸€æœ¬ä¹¦
                }
           }
-          // Êä³ö×îºóÒ»Ìõ½»Ò×
+          // è¾“å‡ºæœ€åä¸€æ¡äº¤æ˜“
           cout << total.bookNo << " " << total.units_sold << " " << total.revenue << endl;
      }
-     else // Ã»ÓĞÊäÈëÈÎºÎĞÅÏ¢
+     else // æ²¡æœ‰è¾“å…¥ä»»ä½•ä¿¡æ¯
      {
-          // Í¨ÖªÓÃ»§
+          // é€šçŸ¥ç”¨æˆ·
           cerr << "No data?!" << endl;
           return -1;
      }

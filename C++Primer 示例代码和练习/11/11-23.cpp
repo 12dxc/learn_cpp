@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
     multimap<string, vector<string>> m;
-    for (string ln; cout << "ÐÕ:\n", cin >> ln && ln != "@q";)
-        for (string cn; cout << "º¢×ÓÃÇµÄÃû:\n", cin >> cn && cn != "@q";)
+    for (string ln; cout << "å§“:\n", cin >> ln && ln != "@q";)
+        for (string cn; cout << "å­©å­ä»¬çš„å:\n", cin >> cn && cn != "@q";)
             m.emplace(ln, cn);
 
     return 0;

@@ -3,12 +3,12 @@
 #include <vector>
 using namespace std;
 
-// ·µ»ØÒ»¸ö¶¯Ì¬·ÖÅäµÄintµÄvector
+// è¿”å›ä¸€ä¸ªåŠ¨æ€åˆ†é…çš„intçš„vector
 shared_ptr<vector<int>> alloc_vector()
 {
     return make_shared<vector<int>>();
 }
-// ¶ÁÈ¡±ê×¼ÊäÈë
+// è¯»å–æ ‡å‡†è¾“å…¥
 void assign_vector(shared_ptr<vector<int>> p)
 {
     int i = 0;
@@ -17,7 +17,7 @@ void assign_vector(shared_ptr<vector<int>> p)
         p->push_back(i);
     }
 }
-// ´òÓ¡¶ÁÈëµÄÖµ
+// æ‰“å°è¯»å…¥çš„å€¼
 void print_vector(shared_ptr<vector<int>> p)
 {
     for (auto i : *p)
