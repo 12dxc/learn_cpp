@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>406</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>自定义对话框</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>641</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actSetSize"/>
+   <addaction name="actSetHeader"/>
+   <addaction name="actLocate"/>
+   <addaction name="separator"/>
+   <addaction name="actExit"/>
+  </widget>
+  <action name="actSetSize">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/row.bmp</normaloff>:/icons/row.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>设置行数列数</string>
+   </property>
+  </action>
+  <action name="actSetHeader">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/header.bmp</normaloff>:/icons/header.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>设置表头标题</string>
+   </property>
+  </action>
+  <action name="actLocate">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/locate.bmp</normaloff>:/icons/locate.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>定位单元格</string>
+   </property>
+  </action>
+  <action name="actExit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/exit.bmp</normaloff>:/icons/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

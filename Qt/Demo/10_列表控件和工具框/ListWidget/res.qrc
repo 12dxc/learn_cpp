@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/append.bmp</file>
+        <file>icons/check.ico</file>
+        <file>icons/clear.bmp</file>
+        <file>icons/delete.bmp</file>
+        <file>icons/exit.bmp</file>
+        <file>icons/init.bmp</file>
+        <file>icons/insert.bmp</file>
+        <file>icons/item.bmp</file>
+        <file>icons/list.bmp</file>
+        <file>icons/pop.bmp</file>
+        <file>icons/table.bmp</file>
+        <file>icons/tree.bmp</file>
+    </qresource>
+</RCC>

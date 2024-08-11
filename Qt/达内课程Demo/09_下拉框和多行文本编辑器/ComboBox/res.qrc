@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>icons/aim.ico</file>
-        <file>icons/unit.ico</file>
-    </qresource>
-</RCC>

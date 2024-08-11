@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/428.bmp</file>
+        <file>icons/aligncenter.bmp</file>
+        <file>icons/alignleft.bmp</file>
+        <file>icons/alignright.bmp</file>
+        <file>icons/append.bmp</file>
+        <file>icons/bld.bmp</file>
+        <file>icons/clean.bmp</file>
+        <file>icons/delete.bmp</file>
+        <file>icons/exit.bmp</file>
+        <file>icons/export.bmp</file>
+        <file>icons/import.bmp</file>
+        <file>icons/insert.bmp</file>
+        <file>icons/itl.bmp</file>
+        <file>icons/open.bmp</file>
+        <file>icons/remove.bmp</file>
+        <file>icons/save.bmp</file>
+    </qresource>
+</RCC>
